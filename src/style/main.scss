@@ -1,11 +1,7 @@
-body {
-  .content {
-    div {
-      display: block;
-      text-align: center;
-      height: 100px;
-      font-size: 50px;
-      width: 100%;
-    }
-  }
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
 }
