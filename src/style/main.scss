@@ -3,5 +3,158 @@
   padding: 0;
 }
 body{
-  height: 100vh;
+  height: calc(100vh - 50px);
+  background-color: #3399CC;
+  border: #2B81AC solid 25px;
+  color: #ffffff;
+  font-family: 'Lucida Sans Unicode';
+  
+  header,
+  main,
+  footer{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 35px;
+  }
+  main{
+    height: 70%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    section{
+      -webkit-flex: 2 1 auto;
+      -ms-flex: 2 1 auto;
+      flex: 2 1 auto;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-color: #ffffff;
+      padding: 3px;
+
+      .row{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+
+        .cell{
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          margin: 3px;
+          
+          p{
+            font-family: 'Lucida Grande', sans-serif;
+          }
+        }
+        #lisbon{
+          width: calc(50% + 6px);
+          background: rgba(51,153,204, 1);
+
+          &:hover{
+            background-color: rgba(51,153,204, 0.9);
+          }
+        }
+        #paris{
+          width: 25%;
+          background-color: #33CCCC;
+
+          &:hover{
+            background-color: rgba(51,204,204, 0.9);
+          }
+        }
+        #belgrad{
+          width: 25%;
+          background-color: #996699;
+
+          &:hover{
+            background-color: rgba(153,102,153, 0.9);
+          }
+        }
+        #kyiv{
+          width: 25%;
+          background-color: #C24747;
+          
+          &:hover{
+            background-color: rgba(194,71,71, 0.9);
+          }
+        }
+        #tel_aviv{
+          width: 25%;
+          background-color: #E2674A;
+          
+          &:hover{
+            background-color: rgba(226,103,74, 0.9);
+          }
+        }
+        #cair{
+          width: 25%;
+          background-color: #FFCC66;
+
+          &:hover{
+            background-color: rgba(255,204,102, 0.9);
+          }
+        }
+        #new_york{
+          width: 25%;
+          background-color: #99CC99;
+
+          &:hover{
+            background-color: rgba(153,204,153, 0.9);
+          }
+        }
+        #new_delhi{
+          width: 25%;
+          background-color: #669999;
+
+          &:hover{
+            background-color: rgba(102,153,153, 0.9);
+          }
+        }
+        #san_francisco{
+          width: calc(50% + 6px);          
+          background-color: #CC6699;
+
+          &:hover{
+            background-color: rgba(204,102,153, 0.9);
+          }
+        }
+        #tokyo{
+          width: 25%;
+          background-color: #339966;
+
+          &:hover{
+            background-color: rgba(51,153,102, 0.9);
+          }
+        }
+        #sydney{
+          width: 100%;
+          background-color: #666699;
+
+          &:hover{
+            background-color: rgba(102,102,153, 0.9);
+          }
+        }
+      }
+    }
+  }
+  
 }
